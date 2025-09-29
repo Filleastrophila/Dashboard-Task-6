@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-flex</title>
+    <link rel="stylesheet" href="dashboard-flex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="container-left">
+            <div class="sidebar">
+                <div class="logo"><a href="#"><h1><span class="m-icon">M</span>MATERIO</h1></a></div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa fa-home"></i>Dashboard</a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i>Account Settings</a></li>
+                        <p class="navp">PAGES</p>
+                        <li><a href="#"><i class="fa fa-sign-in"></i>Login</a></li>
+                        <li><a href="#"><i class="fa fa-user-plus"></i>Register</a></li>
+                        <li><a href="#"><i class="fa fa-exclamation-circle"></i>Error</a></li>
+                        <p class="navp"> USER INTERFACE</p>
+                        <li><a href="#"><i class="fa fa-keyboard"></i>Typography</a></li>
+                        <li><a href="#"><i class="fa fa-cubes"></i>Icons</a></li>
+                        <li><a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Cards</a></li>
+                        <li><a href="#"><i class="fa fa-table"></i>Tables</a></li>
+                        <li><a href="#"><i class="fa fa-cube"></i>Form Layouts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="maincontent">
+            <header class="header clearfix">
+    
+    <div class="hamburger">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="searchbar">
+        <input type="text" placeholder="Search...">
+        <i class="fa fa-search"></i>
+    </div>
+    
+    <div class="mobile-logo">
+        <a href="#"><h1><span class="m-icon">M</span>MATERIO</h1></a>
+    </div>
+    <div class="icons">
+        <a href="#"><i class="fa fa-moon"></i></a>
+        <a href="#"><i class="fa fa-bell"></i></a>
+        <a href="#"><i class="fa fa-user-circle"></i></a>
+    </div>
+</header>
+
+
+            <main class="dashboard-content clearfix">
+                <div class="card-row1 clearfix">
+                    <div class="card card-congratulations">
+                        <div class="congratulation-content">
+                            <h2>Congratulations John! 🥳</h2>
+                            <p>Best seller of the month</p>
+                            <p class="sales-figure"><strong>$42.8k</strong></p>
+                            <button class="cardbutton">VIEW SALES</button>
+                        </div>
+                        <!-- <div class="figure">
+                        <img src="prize.png" alt="prize" class="prize-img">
+                    </div> -->
+                    </div>
+                    
+                    <div class="card card-statistics">
+                        <div class="card-header1 clearfix">
+                            <h2>Statistics Card</h2>
+                            <p>Total 48.5% growth 😎 this month</p>
+                        </div>
+                        <div class="statistics-items clearfix">
+                            <div class="statistic-item">
+                                <img src="highsales.png" alt="Sales icon">
+                                <div class="statistic-content">
+                                    <p>Sales</p>
+                                    <strong>245k</strong>
+                                </div>
+                            </div>
+                            <div class="statistic-item">
+                                <img src="customer.png" alt="Customers icon">
+                                <div class="statistic-content">
+                                    <p>Customers</p>
+                                    <strong>12.5k</strong>
+                                </div>
+                            </div>
+                            <div class="statistic-item">
+                                <img src="product.png" alt="Products icon">
+                                <div class="statistic-content">
+                                    <p>Products</p>
+                                    <strong>1.54k</strong>
+                                </div>
+                            </div>
+                            <div class="statistic-item">
+                                <img src="revenue.png" alt="Revenue icon">
+                                <div class="statistic-content">
+                                    <p>Revenue</p>
+                                    <strong>$88k</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-row2 clearfix">
+    
+    <div class="card card-weekly-overview">
+        <div class="card-header">
+            <h2>Weekly Overview</h2>
+            <button class="card-menu"><i class="fa fa-ellipsis-v"></i></button>
+        </div>
+        <div class="chart-container">
+            <img src="weekly-chart.png" alt="Weekly overview chart">
+        </div>
+        <div class="weekly-summary">
+            <div class="total">
+                <div class="left"><p>45%</p></div>
+                <div class="right"><p>Your sales performance is 45% 😎 better compared to last month</p></div>
+            </div>
+            <button class="cardbutton">DETAILS</button>
+        </div>
+    </div>
+    
+    
+    <div class="card card-total-earning">
+        <div class="card-header">
+            <h2>Total Earning</h2>
+            <button class="card-menu"><i class="fa fa-ellipsis-v"></i></button>
+        </div>
+        <p class="earning-amount"><strong>$24,895</strong> <span class="earning-change">^10%</span></p>
+        <p class="earning-comparison">Compared to $44,325 last year</p>
+        <div class="earning-list">
+            <div class="earning-item clearfix">
+              <div class="earningimg"><img src="product.png" alt="Zipcar"></div>
+                <div class="left-earning">
+
+                <span class="item-name">Zipcar</span>
+                <span class="item-content">Vuejs, React & HTML</span>
+                </div>
+                <div class="right-earning">
+                <span class="item-value">$24,895.65</span>
+                <div class="color-bar1"></div>
+                </div>
+            </div>
+            <div class="earning-item clearfix">
+              <div class="earningimg"><img src="product.png" alt="Bitbank"></div>
+                <div class="left-earning">
+                
+                <span class="item-name">Bitbank</span>
+                <span class="item-content">Sketch, Figma & XD</span>
+                </div>
+                <div class="right-earning">
+                <span class="item-value">$8,650.20</span>
+                <div class="color-bar2"></div>
+            </div>
+            </div>
+            <div class="earning-item clearfix">
+              <div class="earningimg"><img src="product.png" alt="Aviato"></div>
+                <div class="left-earning">
+                
+                <span class="item-name">Aviato</span>
+                <span class="item-content">HTML & Angular</span>
+                </div>
+                <div class="right-earning">
+                <span class="item-value">$1,245.80</span>
+                <div class="color-bar3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="right-col">
+        <div class="card card-total-profit">
+            <div class="card-header">
+              <button class="card-menu"><i class="fa fa-ellipsis-v"></i></button>
+                <div><img src="highsales.png" alt="Sales icon"></div>
+                <p>Total Profit</p>
+                
+            </div>
+            <div class="right-col-contents">
+            <strong>$25.6k <sup class="profit">+42%</sup></strong>
+            <p class="weekly">Weekly Profit</p>
+            </div>
+        </div>
+
+        <div class="card card-refunds">
+            <div class="card-header">
+              <button class="card-menu"><i class="fa fa-ellipsis-v"></i></button>
+                <div><img src="highsales.png" alt="Sales icon"></div>
+                <p>Refunds</p>
+                
+            </div>
+            <div class="right-col-contents">
+            <strong>$78 <sup class="loss">-15%</sup></strong>
+            <p class="monthly">Past Month</p>
+            </div>
+        </div>
+
+        <div class="card card-new-project">
+            <div class="card-header">
+              <button class="card-menu"><i class="fa fa-ellipsis-v"></i></button>
+                <div><img src="highsales.png" alt="Sales icon"></div>
+                <p>New Project</p>
+              
+            </div>
+            <div class="right-col-contents">
+            <strong>862 <sup class="loss">-18%</sup></strong>
+            <p>Yearly Project</p>
+            </div>
+        </div>
+
+        <div class="card card-sales-queries">
+            <div class="card-header">
+              <button class="card-menu"><i class="fa fa-ellipsis-v"></i></button>
+                <div><img src="highsales.png" alt="Sales icon"></div>
+                <p>Sales Queries</p>
+                
+            </div>
+            <div class="right-col-contents">
+            <strong>15 <sup class="loss">-18%</sup></strong>
+            <p>Last Week</p>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="card-row3 clearfix">
+
+  <div class=" card country-card">
+      <div class="card-header">
+          <h2>Sales by Countries</h2>
+          <button class="card-menu"><i class="fa fa-ellipsis-v"></i></button>
+      </div>
+      <ul class="country-list">
+          <li>
+              <div class="country-item clearfix">
+                  <div class="country-left">
+                      <div class="country-icon" style="background:#8a2be2">US</div>
+                      <strong class="country-amount">$8,656k <sup class="profit">^25.8%</sup></strong>
+                      <div class="country-name">USA</div>
+                  </div>
+                  <div class="country-right">
+                      <div class="country-sales">894k</div>
+                      <div class="country-sales-label">Sales</div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="country-item clearfix">
+                  <div class="country-left">
+                      <div class="country-icon" style="background:#ff7f50">UK</div>
+                      <strong class="country-amount">$2,415k <sup class="loss">v6.2%</sup></strong>
+                      <div class="country-name">UK</div>
+                  </div>
+                  <div class="country-right">
+                      <div class="country-sales">645k</div>
+                      <div class="country-sales-label">Sales</div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="country-item clearfix">
+                  <div class="country-left">
+                      <div class="country-icon" style="background:#3cb371">IN</div>
+                      <strong class="country-amount">$865k <sup class="profit">^12.4%</sup></strong>
+                      <div class="country-name">India</div>
+                  </div>
+                  <div class="country-right">
+                      <div class="country-sales">148k</div>
+                      <div class="country-sales-label">Sales</div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="country-item clearfix">
+                  <div class="country-left">
+                      <div class="country-icon" style="background:#ffa500">JA</div>
+                      <strong class="country-amount">$745k <sup class="loss">v11.9%</sup></strong>
+                      <div class="country-name">Japan</div>
+                  </div>
+                  <div class="country-right">
+                      <div class="country-sales">86k</div>
+                      <div class="country-sales-label">Sales</div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="country-item clearfix">
+                  <div class="country-left">
+                      <div class="country-icon" style="background:#1e90ff">KO</div>
+                      <strong class="country-amount">$45k <sup class="profit">^16.2%</sup></strong>
+                      <div class="country-name">Korea</div>
+                  </div>
+                  <div class="country-right">
+                      <div class="country-sales">42k</div>
+                      <div class="country-sales-label">Sales</div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+  </div>
+
+  
+  <div class=" card transactions-card">
+    
+    <div class="transactions-left">
+      <div class="section-header">
+        <h3>Deposit</h3>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <ul class="transaction-list">
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="gumroad.jpg" alt="Gumroad"></div>
+            <div class="details">
+              <h5>Gumroad Account</h5>
+              <p>Sell UI Kit</p>
+            </div>
+          </div>
+          <div class="transaction-amount positive">+$4,650</div>
+        </li>
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="mastercard.jpg" alt="Mastercard"></div>
+            <div class="details">
+              <h5>Mastercard</h5>
+              <p>Wallet Deposit</p>
+            </div>
+          </div>
+          <div class="transaction-amount positive">+$92,705</div>
+        </li>
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="stripe.jpg" alt="Stripe"></div>
+            <div class="details">
+              <h5>Stripe Account</h5>
+              <p>iOS Application</p>
+            </div>
+          </div>
+          <div class="transaction-amount positive">+$957</div>
+        </li>
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="americanbank.jpg" alt="US Bank"></div>
+            <div class="details">
+              <h5>American Bank</h5>
+              <p>Bank Transfer</p>
+            </div>
+          </div>
+          <div class="transaction-amount positive">+$6,837</div>
+        </li>
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="citi.jpg" alt="Citi Bank"></div>
+            <div class="details">
+              <h5>Bank Account</h5>
+              <p>Wallet Deposit</p>
+            </div>
+          </div>
+          <div class="transaction-amount positive">+$446</div>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="transactions-right">
+      <div class="section-header">
+        <h3>Withdraw</h3>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <ul class="transaction-list">
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="google.jpg" alt="Google"></div>
+            <div class="details">
+              <h5>Google Adsense</h5>
+              <p>Paypal Deposit</p>
+            </div>
+          </div>
+          <div class="transaction-amount negative">- $145</div>
+        </li>
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="github.jpg" alt="Github"></div>
+            <div class="details">
+              <h5>Github Enterprise</h5>
+              <p>Security & complaince</p>
+            </div>
+          </div>
+          <div class="transaction-amount negative">- $1,200</div>
+        </li>
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="upgrade.jpg" alt="upgrade"></div>
+            <div class="details">
+              <h5>Upgrade Slack Plan</h5>
+              <p>Debit Card Deposit</p>
+            </div>
+          </div>
+          <div class="transaction-amount negative">- $999</div>
+        </li>
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="digitalocean.jpg" alt="digital"></div>
+            <div class="details">
+              <h5>DigitalOcean</h5>
+              <p>Office Supplies</p>
+            </div>
+          </div>
+          <div class="transaction-amount negative">- $543</div>
+        </li>
+        <li class="transaction-row">
+          <div class="transaction-info">
+            <div class="logo-box"><img src="aws.jpg" alt="aws"></div>
+            <div class="details">
+              <h5>AWS Account</h5>
+              <p>Marketing</p>
+            </div>
+          </div>
+          <div class="transaction-amount negative">- $320</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="card-row4">
+  <table class="employee-table">
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>DATE</th>
+        <th>SALARY</th>
+        <th>AGE</th>
+        <th>STATUS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p class="emp-name">Sally Quinn</p>
+          <p class="emp-role">Human Resource Assistant</p>
+        </td>
+        <td>
+          <p class="emp-email">eebsworth2m@sbwire.com</p>
+        </td>
+        <td>
+          <p class="emp-date">09/27/2018</p>
+        </td>
+        <td>
+          <p class="emp-salary">$19,586.23</p>
+        </td>
+        <td>
+          <p class="emp-age">27</p>
+        </td>
+        <td>
+          <span class="statusTag blue">Current</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="emp-name">Margaret Bowers</p>
+          <p class="emp-role">Nuclear Power Engineer</p>
+        </td>
+        <td>
+          <p class="emp-email">kocrevy0@thetimes.co.uk</p>
+        </td>
+        <td>
+          <p class="emp-date">09/23/2016</p>
+        </td>
+        <td>
+          <p class="emp-salary">$23,896.35</p>
+        </td>
+        <td>
+          <p class="emp-age">61</p>
+        </td>
+        <td>
+          <span class="statusTag green">Professional</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="emp-name">Minnie Roy</p>
+          <p class="emp-role">Environmental Specialist</p>
+        </td>
+        <td>
+          <p class="emp-email">ediehn6@163.com</p>
+        </td>
+        <td>
+          <p class="emp-date">10/15/2017</p>
+        </td>
+        <td>
+          <p class="emp-salary">$18,991.67</p>
+        </td>
+        <td>
+          <p class="emp-age">59</p>
+        </td>
+        <td>
+          <span class="statusTag red">Rejected</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="emp-name">Ralph Leonard</p>
+          <p class="emp-role">Sales Representative</p>
+        </td>
+        <td>
+          <p class="emp-email">dfalloona@ifeng.com</p>
+        </td>
+        <td>
+          <p class="emp-date">06/12/2018</p>
+        </td>
+        <td>
+          <p class="emp-salary">$19,252.12</p>
+        </td>
+        <td>
+          <p class="emp-age">30</p>
+        </td>
+        <td>
+          <span class="statusTag orange">Resigned</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="emp-name">Annie Martin</p>
+          <p class="emp-role">Operator</p>
+        </td>
+        <td>
+          <p class="emp-email">sganderton2@tuttocitta.it</p>
+        </td>
+        <td>
+          <p class="emp-date">03/24/2018</p>
+        </td>
+        <td>
+          <p class="emp-salary">$13,076.28</p>
+        </td>
+        <td>
+          <p class="emp-age">66</p>
+        </td>
+        <td>
+          <span class="statusTag lightBlue">Applied</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+            </main>
+            <footer>
+    <div class="left-footer">
+        &copy; 2025 Your Company
+    </div>
+    <div class="right-footer">
+        <ul>
+            <li><a href="#">MIT License</a></li>
+            <li><a href="#">More Themes</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+</body>
+<script src="dashboard.js"></script>
+</html>
