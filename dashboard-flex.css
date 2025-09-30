@@ -4,10 +4,44 @@
     margin: 0;
 }
 
+:root {
+    --body-bg: aliceblue;
+    --text-color: #555;
+    --text-light: #888;
+    --card-bg: white;
+    --card-shadow: rgba(165, 163, 174, 0.3);
+    --sidebar-bg: aliceblue;
+    --sidebar-text: #555;
+    --sidebar-active-bg: linear-gradient(to right, #b676fb, #8a2be2);
+    --sidebar-active-text: white;
+    --primary-color: #8a2be2;
+    --footer-bg: white;
+    --table-border: #333;
+}
+
+
+.dark-mode {
+    --body-bg: #121212;
+    --text-color: #e0e0e0;
+    --text-light: #aaa;
+    --card-bg: #1e1e1e;
+    --card-shadow: rgba(0,0,0,0.5);
+    --sidebar-bg: #1b1b1b;
+    --sidebar-text: #e0e0e0;
+    --sidebar-active-bg: linear-gradient(to right, #b676fb, #8a2be2);
+    --sidebar-active-text: white;
+    --primary-color: #8a2be2;
+    --footer-bg: #121212;
+}
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    /* background-color: #f4f5fa; */
+    background-color: var(--body-bg);
+    color: var(--text-color);
 }
 
 a {
@@ -21,9 +55,10 @@ ul {
 }
 
 .card {
-    background-color: white;
+    
     border-radius: 6px;
-    box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
+    background-color: var(--card-bg);
+    box-shadow: 0 0.125rem 0.25rem var(--card-shadow);
 }
 
 
@@ -32,7 +67,7 @@ ul {
     min-height: 100vh;
     position: relative;
     display: flex; 
-    background-color: aliceblue;
+    color: var(--text-color);
 }
 
 
@@ -50,7 +85,8 @@ ul {
     width: 100%;
     height: 100%;
     padding: 20px 0;
-    background-color: aliceblue;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
 }
 
 .maincontent {
@@ -60,7 +96,6 @@ ul {
     min-height: 100vh; 
     padding: 0 20px 80px 20px; 
     position: relative; 
-    /* background-color: #f4f5fa; */
 }
 
 
@@ -91,13 +126,14 @@ ul {
     border-radius: 0 20px 20px 0; 
 }
 .sidebar-nav ul li.active a { 
-    color: white; 
+    background: var(--sidebar-active-bg);
+    color: var(--sidebar-active-text); 
 }
 .sidebar-nav a { 
     display: block; 
     padding: 10px 10px 10px 20px; 
-    color: #6e6b7b; 
     transition: color 0.2s; 
+    color: var(--sidebar-text);
 }
 .sidebar-nav a:hover { 
     color: #8a2be2; 
@@ -202,7 +238,7 @@ ul {
 }
 .card-congratulations .cardbutton {
     color: white;
-    background-color: #8a2be2;
+    background-color: var(--primary-color);
     border: none;
     padding: 8px 15px;
     border-radius: 4px;
@@ -296,7 +332,7 @@ ul {
     font-weight: bold;
 }
 .card-weekly-overview .cardbutton {
-    background-color: #8a2be2;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 8px 15px;
@@ -641,16 +677,18 @@ ul {
 .employee-table {
     width: 100%;
     border-collapse: collapse;
+    background-color: var(--card-bg);
+    color: var(--text-color);
 }
 .employee-table th, .employee-table td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #f4f5fa;
+    border-bottom: 1px solid var(--table-border);
 }
 
 .employee-table th {
 
-    color: #a5a3ae;
+    color: var(--text-light);
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 600;
